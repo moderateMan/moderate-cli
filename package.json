@@ -1,6 +1,6 @@
 {
   "name": "moderate-cli",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "moderate-cli",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
     "test:report": "jest --coverage  --silent"
   },
   "files": [
-    "dist"
+    "bin"
   ],
   "keywords": [
     "react",
