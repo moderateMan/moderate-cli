@@ -4,7 +4,7 @@ import { Spinner } from "cli-spinner";
 
 
 function formatPath(p: string | undefined) {
-	if (p && typeof p === "string") {
+	if (p) {
 		const sep = path.sep;
 		if (sep === "/") {
 			return p;
