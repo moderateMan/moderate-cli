@@ -24,7 +24,7 @@ function getNpmInfo(npmName: string, registry?: string) {
 function getDefaultRegistry(isOriginal = false) {
 	return isOriginal
 		? "https://registry.npmjs.org"
-		: "https://registry.npm.taobao.org";
+		: "https://registry.npmmirror.com/";
 }
 
 async function getNpmVersions(npmName: string, registry?: string) {
