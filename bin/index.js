@@ -1,3 +1,3 @@
 #! /usr/bin/env node
 
-require("../packages/core/dist/index.js")
+require("@moderate-cli/core")

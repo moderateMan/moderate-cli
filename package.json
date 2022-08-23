@@ -37,6 +37,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
+    "@moderate-cli/core": "^0.2.2",
     "commander": "^9.4.0"
   }
 }
