@@ -6,6 +6,7 @@ import colors from "colors";
 import { log,getNpmSemverVersion } from "@moderate-cli/utils";
 import exec from "./exec";
 import commander from "commander";
+import detEnv  from "dotenv";
 // 变量
 import constants from "./constants";
 const pkg = require("../package.json");
@@ -82,7 +83,7 @@ function checkArgs(args: { [key: string]: any }) {
 }
 
 function checkEnv() {
-	const detEnv = require("dotenv");
+	
 	const dotenvPath = path.resolve(userHome, ".env");
 	if (pathExistsSync(dotenvPath)) {
 		detEnv.config({
