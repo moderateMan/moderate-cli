@@ -1,0 +1,42 @@
+{
+  "name": "@moderate-cli/models",
+  "version": "0.2.2",
+  "description": "> TODO: description",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "pub": "yarn build && yarn publish",
+    "pub:next": "yarn publish --tag next",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest --silent",
+    "test:report": "jest --coverage  --silent"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "闲D阿强",
+  "license": "MIT",
+  "homepage": "https://www.moderate.run/#/",
+  "dependencies": {
+    "@moderate-cli/utils": "^0.2.2",
+    "axios": "^0.27.2",
+    "colors": "^1.4.0",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^8.1.0",
+    "npminstall": "^4.10.0",
+    "path-exists": "^4.0.0",
+    "pkg-dir": "^5.0.0",
+    "semver": "^7.3.4",
+    "simple-git": "^2.39.0",
+    "terminal-link": "^2.1.1",
+    "user-home": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/semver": "^7.3.12"
+  },
+  "gitHead": "9b073fd6d8b2ac64e910fb0af70efa5440d69c34"
+}
