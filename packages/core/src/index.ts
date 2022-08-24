@@ -65,7 +65,6 @@ function checkRoot() {
 
 // 查询主目录
 function checkUsrHome() {
-	console.log(userHome);
 	if (!userHome || !pathExistsSync(userHome)) {
 		throw new Error(colors.red("当前登陆用户主目录不存在！"));
 	}
@@ -125,7 +124,6 @@ async function checkGlobalUpdate() {
 }
 
 function registerCommand() {
-	console.log("registerCommand");
 	program
 		.name(Object.keys(pkg.bin)[0])
 		.usage("<command> [options]")
@@ -133,8 +131,7 @@ function registerCommand() {
 		.option("-d,--debug", "是否开启调试模式", false)
 		.option(
 			"-tp,--targetPath <targetPath>",
-			"是否指定本地调试文件路径",
-			""
+			"设置packages中core的node_modules文件位置，直接拷贝文件夹绝对路径即可。"
 		);
 
 	// 初始化
@@ -165,14 +162,10 @@ function registerCommand() {
 	});
 
 	program.parse(process.argv);
-	console.log("registerCommand");
 	if (program.args && program.args.length < 1) {
 		program.outputHelp();
 		console.log();
 	}
 }
 
-core();
-
 export default core;
-module.exports = core
