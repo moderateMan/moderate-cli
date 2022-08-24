@@ -1,3 +1,8 @@
 #! /usr/bin/env node
 // moderate-cli
-require("@moderate-cli/core")
+let isDebug = process.argv.includes("-d")
+if(!isDebug){
+    require("@moderate-cli/core")
+}else{
+    require("../packages/core/dist")
+}

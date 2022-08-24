@@ -71,7 +71,8 @@ async function main(this: any, ...rest: any) {
 				}
 			});
 			args[args.length - 1] = temp;
-			const code = `require('${rootFile}').call(null, ${JSON.stringify(
+			
+			const code = `require('${rootFile}').default.call(null, ${JSON.stringify(
 				args
 			)})`;
 			const child = exec("node", ["-e", code], {
