@@ -445,10 +445,8 @@ export class InitCommand extends Command {
 	}
 }
 
-export function init(argv:any) {
+function init(argv:any) {
 	return new InitCommand(argv);
 }
-
-module.exports = init
 
 export default init;

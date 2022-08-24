@@ -1,6 +1,6 @@
 {
   "name": "moderate-cli",
-  "version": "0.2.5",
+  "version": "0.2.8",
   "description": "moderate-cli",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,8 @@
     "moderate-cli": "bin/index.js"
   },
   "scripts": {
-    "dev": "node bin/index.js init demo -tp /Users/johnlee/workSpace/frontEnd/cli/moderate-cli-ts/packages/core/node_modules",
+    "dev": "node bin/index.js init demo",
+    "devDebug": "node bin/index.js -d init demo -tp /Users/johnlee/workSpace/frontEnd/cli/moderate-cli-ts/packages/core/node_modules",
     "build": "lerna run build",
     "pub": "yarn build && yarn publish",
     "pub:next": "yarn publish --tag next",
@@ -37,7 +38,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@moderate-cli/core": "^0.2.2",
+    "@moderate-cli/core": "^0.2.3",
     "commander": "^9.4.0"
   }
 }
