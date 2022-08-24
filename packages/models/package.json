@@ -1,6 +1,6 @@
 {
   "name": "@moderate-cli/models",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "> TODO: description",
   "main": "dist/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "license": "MIT",
   "homepage": "https://www.moderate.run/#/",
   "dependencies": {
-    "@moderate-cli/utils": "^0.2.4",
+    "@moderate-cli/utils": "^0.3.0",
     "axios": "^0.27.2",
     "colors": "^1.4.0",
     "fs-extra": "^9.0.1",
