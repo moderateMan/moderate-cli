@@ -1,6 +1,6 @@
 {
   "name": "@moderate-cli/core",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "> TODO: description",
   "main": "dist/index.js",
   "types": "src/type.d.ts",
