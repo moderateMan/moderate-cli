@@ -1,6 +1,6 @@
 {
   "name": "moderate-cli",
-  "version": "0.2.9",
+  "version": "0.2.12",
   "description": "moderate-cli",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -38,7 +38,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@moderate-cli/core": "^0.2.4",
+    "@moderate-cli/core": "^0.2.5",
     "commander": "^9.4.0"
   }
 }
