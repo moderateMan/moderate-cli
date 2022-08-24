@@ -1,6 +1,6 @@
 {
   "name": "@moderate-cli/core",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "> TODO: description",
   "main": "dist/index.js",
   "types": "src/type.d.ts",
@@ -35,9 +35,9 @@
     "user-home": "^3.0.0"
   },
   "dependencies": {
-    "@moderate-cli/init": "^0.2.3",
-    "@moderate-cli/models": "^0.2.3",
-    "@moderate-cli/utils": "^0.2.3",
+    "@moderate-cli/init": "^0.2.4",
+    "@moderate-cli/models": "^0.2.4",
+    "@moderate-cli/utils": "^0.2.4",
     "colors": "^1.4.0",
     "commander": "^9.4.0",
     "dotenv": "^16.0.1",

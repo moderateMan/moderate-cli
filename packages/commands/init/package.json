@@ -1,6 +1,6 @@
 {
   "name": "@moderate-cli/init",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "> TODO: description",
   "main": "dist/index.js",
   "scripts": {
@@ -21,8 +21,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@moderate-cli/models": "^0.2.3",
-    "@moderate-cli/utils": "^0.2.3",
+    "@moderate-cli/models": "^0.2.4",
+    "@moderate-cli/utils": "^0.2.4",
     "@types/fs-extra": "^9.0.13",
     "@types/inquirer": "^8.2.3",
     "@types/semver": "^7.3.12",
