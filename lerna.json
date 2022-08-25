@@ -1,9 +1,8 @@
 {
   "packages": [
-    "./",
-    "packages/*",
-    "packages/commands/*",
-    "packages/models/*"
+    "packages/*"
   ],
-  "version": "0.3.0"
+  "version": "0.3.0",
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }

@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "tsc",
     "pub": "yarn build && yarn publish",
     "pub:next": "yarn publish --tag next",
     "lint": "eslint src/**/*.ts",
@@ -19,7 +19,7 @@
   },
   "author": "闲D阿强",
   "license": "MIT",
-  "homepage": "https://www.moderate.run/#/",
+  "homepage": "https://zero2one.moderate.run",
   "dependencies": {
     "@moderate-cli/utils": "^0.3.0",
     "axios": "^0.27.2",
@@ -36,7 +36,8 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
-    "@types/semver": "^7.3.12"
+    "@types/semver": "^7.3.12",
+    "rimraf": "^3.0.2"
   },
   "gitHead": "9b073fd6d8b2ac64e910fb0af70efa5440d69c34"
 }

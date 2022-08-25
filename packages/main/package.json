@@ -1,0 +1,30 @@
+{
+	"name": "moderate-cli",
+	"version": "0.3.0",
+	"description": "moderate-cli",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"bin": {
+		"moderate-cli": "bin/index.js"
+	},
+	"scripts": {
+		"dev": "node bin/index.js init demo",
+		"devDebug": "node bin/index.js -d init demo -tp /Users/johnlee/workSpace/frontEnd/cli/moderate-cli-ts/packages/core/node_modules"
+	},
+	"files": [
+		"bin"
+	],
+	"keywords": [
+		"cli"
+	],
+	"author": "闲D阿强",
+	"license": "MIT",
+	"homepage": "https://zero2one.moderate.run",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/moderateMan/moderate-cli"
+	},
+	"dependencies": {
+		"@moderate-cli/core": "^0.3.0"
+	}
+}

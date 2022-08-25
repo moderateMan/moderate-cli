@@ -1,44 +1,46 @@
 {
-  "name": "moderate-cli",
-  "version": "0.3.0",
-  "description": "moderate-cli",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "bin": {
-    "moderate-cli": "bin/index.js"
-  },
-  "scripts": {
-    "dev": "node bin/index.js init demo",
-    "devDebug": "node bin/index.js -d init demo -tp /Users/johnlee/workSpace/frontEnd/cli/moderate-cli-ts/packages/core/node_modules",
-    "build": "lerna run build",
-    "pub": "yarn build && yarn publish",
-    "pub:next": "yarn publish --tag next",
-    "lint": "eslint packages/**/*.ts",
-    "test": "jest --silent",
-    "test:report": "jest --coverage  --silent"
-  },
-  "files": [
-    "bin"
-  ],
-  "keywords": [
-    "react",
-    "replace-router",
-    "react router v6"
-  ],
-  "author": "闲D阿强",
-  "license": "MIT",
-  "homepage": "https://www.moderate.run/#/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/moderateReact/r6helper"
-  },
-  "devDependencies": {
-    "lerna": "^5.4.3",
-    "rimraf": "^2.6.3",
-    "typescript": "^4.5.4"
-  },
-  "dependencies": {
-    "@moderate-cli/core": "^0.3.0",
-    "commander": "^9.4.0"
-  }
+	"name": "moderate",
+	"version": "0.3.0",
+	"description": "moderate cli for fe",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"bin": {
+		"moderate-cli": "bin/index.js"
+	},
+	"scripts": {
+		"dev": "node bin/index.js init demo",
+		"devDebug": "node bin/index.js -d init demo -tp /Users/johnlee/workSpace/frontEnd/cli/moderate-cli-ts/packages/core/node_modules",
+		"build": "lerna run build",
+		"pub": "yarn build && yarn publish",
+		"pub:next": "yarn publish --tag next",
+		"lint": "eslint packages/**/*.ts",
+		"test": "jest --silent",
+		"test:report": "jest --coverage  --silent"
+	},
+	"files": [
+		"bin"
+	],
+	"keywords": [
+		"cli"
+	],
+	"author": "闲D阿强",
+	"license": "MIT",
+	"homepage": "https://zero2one.moderate.run",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/moderateMan/moderate-cli"
+	},
+	"devDependencies": {
+		"lerna": "^5.4.3",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.5.4"
+	},
+	"dependencies": {
+		"@moderate-cli/core": "^0.3.0",
+		"commander": "^9.4.0"
+	},
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	]
 }

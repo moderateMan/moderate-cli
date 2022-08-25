@@ -11,7 +11,7 @@
 		"test": "__tests__"
 	},
 	"scripts": {
-		"build": "rimraf dist && tsc"
+		"build": "tsc"
 	},
 	"files": [
 		"dist"
@@ -31,6 +31,7 @@
 		"@types/cli-spinner": "^0.2.1",
 		"@types/npmlog": "^4.1.4",
 		"@types/semver": "^7.3.12",
-		"@types/url-join": "^4.0.1"
+		"@types/url-join": "^4.0.1",
+		"rimraf": "^3.0.2"
 	}
 }
