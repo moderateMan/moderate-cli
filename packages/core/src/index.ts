@@ -3,15 +3,14 @@ import path from "path";
 import userHome from "user-home";
 import semver from "semver";
 import colors from "colors";
-import { log,getNpmSemverVersion } from "@moderate-cli/utils";
+import { log, getNpmSemverVersion } from "@moderate-cli/utils";
 import exec from "./exec";
 import commander from "commander";
-import detEnv  from "dotenv";
+import detEnv from "dotenv";
 // 变量
 import constants from "./constants";
 const pkg = require("../package.json");
-
-const pathExistsSync = require("path-exists");
+import { sync as pathExistsSync } from "path-exists";
 import rootCheck from "root-check";
 
 // 创建一个Command 实例
@@ -49,7 +48,7 @@ function checkNodeVersion() {
 	const currentVersion = process.version;
 	// 第二步，比对
 	const lowestVersion = constants.LOWEST_NODE_VERSION;
-	if (!semver.gte(currentVersion, lowestVersion)) {
+	if (semver.lt(currentVersion, lowestVersion)) {
 		throw new Error(
 			`moderate-cli 需要安装 v${lowestVersion}以上版本的 Nodejs`
 		);
@@ -82,7 +81,6 @@ function checkArgs(args: { [key: string]: any }) {
 }
 
 function checkEnv() {
-	
 	const dotenvPath = path.resolve(userHome, ".env");
 	if (pathExistsSync(dotenvPath)) {
 		detEnv.config({
@@ -125,8 +123,8 @@ async function checkGlobalUpdate() {
 
 function registerCommand() {
 	program
-		.name(Object.keys(pkg.bin)[0])
-		.usage("<command> [options]")
+	.name("my-comman123123d")
+	.usage("[global options] command")
 		.version(pkg.version)
 		.option("-d,--debug", "是否开启调试模式", false)
 		.option(
@@ -139,7 +137,7 @@ function registerCommand() {
 		.command("init")
 		.alias("create")
 		.argument("<projectName>", "项目名称（必填）")
-		.option("-f,--force", "是否强制初始化项目")
+		.option("-f,--force", "是否强制初始化项目123123")
 		.action(exec);
 
 	program.on("option:targetPath", function (this: commander.Command) {
@@ -164,7 +162,6 @@ function registerCommand() {
 	program.parse(process.argv);
 	if (program.args && program.args.length < 1) {
 		program.outputHelp();
-		console.log();
 	}
 }
 

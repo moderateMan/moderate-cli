@@ -8,7 +8,7 @@
 		"moderate-cli": "bin/index.js"
 	},
 	"scripts": {
-		"dev": "node bin/index.js init demo",
+		"dev": "node bin/index.js",
 		"devDebug": "node bin/index.js -d init demo -tp /Users/johnlee/workSpace/frontEnd/cli/moderate-cli-ts/packages/core/node_modules",
 		"build": "lerna run build",
 		"pub": "yarn build && yarn publish",
@@ -37,6 +37,7 @@
 	},
 	"dependencies": {
 		"@moderate-cli/core": "^0.3.0",
+		"@types/node": "^18.7.13",
 		"commander": "^9.4.0"
 	},
 	"private": true,
