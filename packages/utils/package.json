@@ -11,7 +11,8 @@
 		"test": "__tests__"
 	},
 	"scripts": {
-		"build": "tsc"
+		"build": "rimraf dist && tsc",
+		"build:sourceMap": "rimraf dist && tsc --sourceMap"
 	},
 	"files": [
 		"dist"

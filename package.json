@@ -9,8 +9,9 @@
 	},
 	"scripts": {
 		"dev": "node bin/index.js",
-		"devDebug": "node bin/index.js -d init demo -tp /Users/johnlee/workSpace/frontEnd/cli/moderate-cli-ts/packages/core/node_modules",
+		"debug:targetPath": "node bin/index.js -d init demo -tp /Users/johnlee/workSpace/frontEnd/cli/moderate-cli-ts/packages/core/node_modules",
 		"build": "lerna run build",
+		"build:sourceMap": "lerna run build:sourceMap",
 		"pub": "yarn build && yarn publish",
 		"pub:next": "yarn publish --tag next",
 		"lint": "eslint packages/**/*.ts",

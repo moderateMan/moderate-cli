@@ -4,7 +4,8 @@
   "description": "> TODO: description",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
+    "build:sourceMap": "rimraf dist && tsc --sourceMap",
     "pub": "yarn build && yarn publish",
     "pub:next": "yarn publish --tag next",
     "lint": "eslint src/**/*.ts",

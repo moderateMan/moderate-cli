@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "src/type.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
+    "build:sourceMap": "rimraf dist && tsc --sourceMap",
     "pub": "npm run build && npm publish",
     "pub:next": "yarn publish --tag next",
     "lint": "eslint src/**/*.ts",
